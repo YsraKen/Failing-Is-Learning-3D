@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2487755831744661915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2487755831744661914}
+  - component: {fileID: 2487755831744661917}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2487755831744661914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2487755831744661915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2487755831744661917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2487755831744661915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0fb23af73539047b8ceaeb1cf591d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: buttonUI
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 31d3d0aee4a915d42935d52b9525a81b, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+  - name: jump
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 905168e38d4011e428c26f30b4ca13d9, type: 3}
+    volume: 0.15
+    pitch: 0.85
+    loop: 0
+  - name: land
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: e8a1991ba019f94409ae036569c628d5, type: 3}
+    volume: 0.115
+    pitch: 0.85
+    loop: 0
+  - name: lose
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 948b55d97004daa4e8eb36a34fd75333, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+  - name: success
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 99e763499ec8a3342a0215937ffeea39, type: 3}
+    volume: 0.372
+    pitch: 1
+    loop: 0
+  - name: damaged
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 03a3f3a55b009fc4ab27f013f07fa070, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+  - name: spike
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 10dfc191b9a61694aba76d15f3401da1, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+  - name: mech
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: f6bb7c99e2e961b48995ed165191280b, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+  - name: lampOn
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 12bbfdb449d9d9e4f89b06b0648ac511, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+  - name: respawn
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: f54a31cac51b66646bfc6d88933429f6, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+  - name: sea
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6356383db3b713247a4b487500b2982d, type: 3}
+    volume: 0.085
+    pitch: 0.85
+    loop: 0
