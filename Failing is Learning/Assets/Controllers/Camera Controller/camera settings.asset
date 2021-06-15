@@ -12,14 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3d72d13489d6c4ba2a064aa186888f, type: 3}
   m_Name: camera settings
   m_EditorClassIdentifier: 
-  offset: 10
   smoothSpeed: 0.12
-  pitchMinMax: {x: -10, y: 30}
-  yawMinMax: {x: -25, y: 25}
-  sensitivity: 0.5
-  doCollisionDetect: 0
-  bubbleRadius: 0.35
-  collisionLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  onStartUpAngle: 15
+  offset: {x: 1, y: 3, z: -15}
+  onStartUpRotation: {x: 20, y: -10, z: 0}

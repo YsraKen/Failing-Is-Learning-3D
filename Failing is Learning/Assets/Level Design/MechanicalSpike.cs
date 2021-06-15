@@ -5,17 +5,13 @@ public class MechanicalSpike : Toggleables
 	public Collider col;
 	public Animator anim;
 	
-
-		
 	static readonly string
 		extend_clip = "extend",
 		retract_clip = "retract";
 	
-	public override void Toggle(bool toggle){
+	protected override void OnToggle(bool toggle){
 		if(toggle) Extend();
 		else Retract();
-		
-		base.Toggle(toggle);
 	}
 		
 	void Extend(){

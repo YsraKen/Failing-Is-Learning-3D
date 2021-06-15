@@ -3,19 +3,24 @@ using UnityEngine.Events;
 
 public class PlayerLocomotion : MonoBehaviour
 {
-	public PlayerController_Movement moveController;
+	PlayerController_Move moveController;
 	
 	public Transform graphics;
 	public Animator anim;
 	
 	static readonly string speed_param = "speed";
 	
+	void Awake(){
+		moveController = GetComponent<PlayerController_Move>();
+	}
+	
 	void Update(){
-		var inputDir = moveController.inputDir;
-		float moveMagnitude = inputDir.magnitude;
-			anim.SetFloat(speed_param, moveMagnitude);
+		float inputDir = moveController.inputDir;
+			anim.SetFloat(speed_param, Mathf.Abs(inputDir));
 			
-		var localDir = inputDir.normalized + graphics.position;
+		var lookDir = moveController.moveVelocity;
+		var localDir = lookDir + graphics.position;
+			
 			graphics.LookAt(localDir);
 	}
 }

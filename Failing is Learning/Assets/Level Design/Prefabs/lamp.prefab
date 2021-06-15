@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_Children: []
   m_Father: {fileID: 2906975223773560533}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &288879604
 MeshFilter:
@@ -174,6 +174,25 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!95 &4518800840495449336
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530027094861292655}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 901e398a8e4863d44a1bc1f5310813d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &-1394510800494577071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +238,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   redLight: {fileID: 7554045945663912823}
+  blackLight: {fileID: 288879601}
+  anim: {fileID: 4518800840495449336}
 --- !u!1001 &3448947992694823230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -278,6 +299,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: -1412095884930140763, guid: dd050d138f4115a44ba87d66a994f73b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a72db0d3745d684eb735cdbb0eaa8b1, type: 2}
+    - target: {fileID: -942338532732015479, guid: dd050d138f4115a44ba87d66a994f73b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c4b8e26226163b649ab6f459857b9025, type: 2}
     - target: {fileID: -784412928878185617, guid: dd050d138f4115a44ba87d66a994f73b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -293,7 +322,7 @@ PrefabInstance:
     - target: {fileID: 4909842706458106362, guid: dd050d138f4115a44ba87d66a994f73b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4a72db0d3745d684eb735cdbb0eaa8b1, type: 2}
+      objectReference: {fileID: 2100000, guid: c4b8e26226163b649ab6f459857b9025, type: 2}
     - target: {fileID: 5288213621616380266, guid: dd050d138f4115a44ba87d66a994f73b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295

@@ -2,11 +2,19 @@ using UnityEngine;
 
 public class Lamp : Toggleables
 {
-	public GameObject redLight;
+	public GameObject
+		redLight,
+		blackLight;
 	
-	public override void Toggle(bool toggle){
-		base.Toggle(toggle);
+	public Animator anim;
+	
+	static readonly string 
+		interact_param = "interact";
 		
+	protected override void OnToggle(bool toggle){
 		redLight.SetActive(toggle);
+		blackLight.SetActive(!toggle);
+		
+		anim.Play(interact_param);
 	}
 }

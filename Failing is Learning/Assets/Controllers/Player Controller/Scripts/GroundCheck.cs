@@ -10,14 +10,9 @@ public class GroundCheck : MonoBehaviour
 	
 	public Monostable monostable = new Monostable(); // oneframe call for isGrounded update
 	
-	PlayerController_Settings settings;
-	
-	void Start(){
-		settings = PlayerController.settings;
-	}
+	public PlayerController_Settings settings;
 	
 	void Update(){
-		
 		isGrounded = Physics.CheckBox(
 			transform.position,
 			settings.cubeSize,

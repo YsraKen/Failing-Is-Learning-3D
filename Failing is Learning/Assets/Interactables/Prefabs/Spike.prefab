@@ -190,6 +190,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f4bc2c9f9db9635468c29c53436a3e1e, type: 2}
+    - target: {fileID: -5817987639953643026, guid: 0f2608575e7486c47a03893630bb0f11, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4bc2c9f9db9635468c29c53436a3e1e, type: 2}
+    - target: {fileID: -2876792956459855101, guid: 0f2608575e7486c47a03893630bb0f11, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4bc2c9f9db9635468c29c53436a3e1e, type: 2}
     - target: {fileID: 919132149155446097, guid: 0f2608575e7486c47a03893630bb0f11, type: 3}
       propertyPath: m_Name
       value: trapsPlaceholder
@@ -198,7 +206,23 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 0f2608575e7486c47a03893630bb0f11, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.5686753
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 0f2608575e7486c47a03893630bb0f11, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.24763948
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 0f2608575e7486c47a03893630bb0f11, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.045336373
+      objectReference: {fileID: 0}
     - target: {fileID: 7205140776170859923, guid: 0f2608575e7486c47a03893630bb0f11, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4bc2c9f9db9635468c29c53436a3e1e, type: 2}
+    - target: {fileID: 8080483550264050757, guid: 0f2608575e7486c47a03893630bb0f11, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f4bc2c9f9db9635468c29c53436a3e1e, type: 2}

@@ -18,6 +18,10 @@ public class MainMenu_LevelButton : MonoBehaviour
 			gameObject.SetActive(activeSelf);
 		}
 		
+		public bool activeSelf{
+			get{ return gameObject.activeSelf; }
+		}
+		
 		int _levelIndex;
 		public int levelIndex{
 			get{ return _levelIndex; }

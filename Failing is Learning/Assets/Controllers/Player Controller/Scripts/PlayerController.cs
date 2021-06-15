@@ -1,43 +1,48 @@
 using UnityEngine;
 
+// Automatic forward Movement
+// Left and Right controllable movement
+
 public class PlayerController : MonoBehaviour
 {
-	public PlayerController_Input _input;
-	public PlayerController_Settings _settings;
+	protected static Rigidbody rb;
+	protected static GroundCheck groundCheck;
+	
+	protected static PlayerController_Input input;
 	
 	#region Shortcuts
 		
-		// static holder
-			protected static PlayerController_Input input;
-			public static PlayerController_Settings settings;
+		public PlayerController_Settings _settings;
+		protected static PlayerController_Settings settings; // static holder
 		
-		protected static float moveSpeed{ get{ return settings.moveSpeed; }}
-		protected static float moveSmooth{ get{ return settings.moveSmooth; }}
+		protected static float moveSpeed{
+			get{ return settings.moveSpeed; }
+		}
 		
-		// protected float jumpForce{ get{ return settings.jumpForce }}
-		// protected ForceMode forceMode{ get{ return settings.forceMode }}
+		protected static float moveSmoothTime{
+			get{ return settings.moveSmoothTime; }
+		}
 		
-		protected static float duration{ get{ return settings.duration; }}
-		protected static float velocity{ get{ return settings.velocity; }}
-			
-		protected static AnimationCurve curve{ get{ return settings.curve; }}
+		protected static float airControlPercent{
+			get{ return settings.airControlPercent; }
+		}
+		
+		protected static Vector3 jumpVelocity{
+			get{ return Vector3.up * settings.jumpForce; }
+		}
+		
+		protected static bool isGrounded{
+			get{ return groundCheck.isGrounded; }
+		}
 	
-		protected static Vector3 cubeSize{ get{ return settings.cubeSize; }}
-		protected static LayerMask groundLayers{ get{ return settings.groundLayers; }}
-		
-		protected bool isGrounded{ get{ return gndCheck.isGrounded; }}
-		
 	#endregion
 	
-	protected Rigidbody rb;
-	protected GroundCheck gndCheck;
-	
-	protected virtual void Awake(){
-		// static holders
-			if(!input) input = _input;
-			if(!settings) settings = _settings;
+	void Awake(){
+		if(!settings) settings = _settings; // static holder
 		
 		rb = GetComponent<Rigidbody>();
-		gndCheck = GetComponentInChildren<GroundCheck>();
+		groundCheck = GetComponentInChildren<GroundCheck>();
+				
+		input = FindObjectOfType<PlayerController_Input>();
 	}
 }

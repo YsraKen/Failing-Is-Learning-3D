@@ -63,6 +63,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7402622829514334236, guid: aaf8eb66f79406143af9a09cc3e7310a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ab12d89e4932074896f5f251c3c45b2, type: 2}
+    - target: {fileID: -7111594441018694040, guid: aaf8eb66f79406143af9a09cc3e7310a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ab12d89e4932074896f5f251c3c45b2, type: 2}
+    - target: {fileID: -6260764998262563851, guid: aaf8eb66f79406143af9a09cc3e7310a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ec54b194ee766884ebb7acf03264347a, type: 2}
+    - target: {fileID: -5940071580084154971, guid: aaf8eb66f79406143af9a09cc3e7310a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ec54b194ee766884ebb7acf03264347a, type: 2}
+    - target: {fileID: -2450481845499349276, guid: aaf8eb66f79406143af9a09cc3e7310a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ec54b194ee766884ebb7acf03264347a, type: 2}
     - target: {fileID: 919132149155446097, guid: aaf8eb66f79406143af9a09cc3e7310a, type: 3}
       propertyPath: m_Name
       value: oakTree
@@ -79,6 +99,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 3832708989100157180, guid: aaf8eb66f79406143af9a09cc3e7310a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ab12d89e4932074896f5f251c3c45b2, type: 2}
     - target: {fileID: 8603806674150118374, guid: aaf8eb66f79406143af9a09cc3e7310a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295

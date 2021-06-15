@@ -367,11 +367,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8455652687260673471, guid: c95798b9fe344aa43acf4c210172153f, type: 3}
       propertyPath: m_Text
-      value: Resume
+      value: Continue
       objectReference: {fileID: 0}
     - target: {fileID: 8634530453216450280, guid: c95798b9fe344aa43acf4c210172153f, type: 3}
       propertyPath: m_Name
-      value: Resume
+      value: Continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634530453216450280, guid: c95798b9fe344aa43acf4c210172153f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c95798b9fe344aa43acf4c210172153f, type: 3}
@@ -1351,6 +1355,7 @@ MonoBehaviour:
   mainMenu: {fileID: 506803841}
   lifeText: {fileID: 760797692}
   scrollRect: {fileID: 677433846}
+  maxTime: 0.65
 --- !u!1 &693763252
 GameObject:
   m_ObjectHideFlags: 0

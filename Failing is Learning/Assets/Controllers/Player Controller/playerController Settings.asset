@@ -13,33 +13,14 @@ MonoBehaviour:
   m_Name: playerController Settings
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  moveSmooth: 0.15
-  duration: 0.65
-  velocity: 20
-  curve:
+  moveSmoothTime: 0.12
+  airControlPercent: 0.4
+  collisionCheckRadius: 0.35
+  collisionLayers:
     serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: -206.7732
-      outSlope: -206.7732
-      tangentMode: 0
-      weightedMode: 3
-      inWeight: 0
-      outWeight: 0.00309119
-    - serializedVersion: 3
-      time: 0.9984741
-      value: 0
-      inSlope: 0.000014996275
-      outSlope: 0.000014996275
-      tangentMode: 0
-      weightedMode: 3
-      inWeight: 0.1329212
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_Bits: 264
+  jumpForce: 8
+  jumpForceMode: 1
   cubeSize: {x: 0.4, y: 0.25, z: 0.4}
   groundLayers:
     serializedVersion: 2
